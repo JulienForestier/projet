@@ -1,0 +1,408 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    min-width: 400px;
+    max-width: 1800px;
+    margin: auto;
+    font-size: small;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* En-tete*/
+
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+img {
+    width: 110px;
+}
+
+#logo {
+    margin-right: 60%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#H {
+    display: block;
+    width: auto;
+    height: 30px;
+    padding-top: 47px;
+    padding-bottom: 28px;
+    margin-right: 20px;
+
+}
+
+#A {
+    display: block;
+    width: auto;
+    height: 30%;
+    padding-top: 47px;
+    padding-bottom: 28px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0065FC;
+}
+
+#A:hover {
+    border-top: 2.5px solid #0065FC;
+}
+
+#H:hover {
+    border-top: 2.5px solid #0065FC;
+}
+
+/* La fin de mon en-tete*/
+
+h1 {
+    padding-top: 8px;
+    padding-left: 30px;
+    font-size: large;
+    height: 20px;
+}
+
+p {
+    padding-top: 1px;
+    padding-left: 30px;
+    font-size: small;
+    font-weight: normal;
+}
+
+/* La barre de recherche*/
+#Recherche {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.fa-location-dot {
+    display: block;
+    font-size: medium;
+    padding: 13px 13px 13px 13px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#saisi {
+    font-weight: bold;
+    font-size: medium;
+    border: 2.5px solid #F2F2F2;
+    border-left: none;
+}
+
+#bouton {
+    background-color: #0065FC;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#bouton:active {
+    background-color: white;
+    color: #0065FC;
+}
+
+#boutonMobile {
+    margin-left: -5px;
+    display: none;
+}
+
+/* Fin de la barre de recherche*/
+
+/* Filtres en checkbox*/
+#BlocFiltres {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    align-items: center;
+    margin: auto;
+}
+
+h2 {
+    padding: 0 15px 0 25px;
+}
+
+.Icones {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+
+
+.Icones i {
+    color: #0065fc;
+    background-color: #deebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: -11px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"].Filtres {
+    display: none;
+}
+
+label {
+    display: contents;
+}
+
+.Icones:hover {
+    background-color: #deebff;
+}
+
+/* Fin des filtres*/
+
+#texte {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#texte i {
+    color: #0065fc;
+    padding-right: 10px;
+}
+
+#texte h3 {
+    font-weight: normal;
+}
+
+input[type="checkbox"].Filtres:checked+.Icones {
+    background-color: red;
+}
+
+/* Card d'hébergements*/
+
+.Hébergements {
+    width: 250px;
+    height: 190px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px lightgray;
+}
+
+
+.Hébergements img {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 110px;
+
+}
+
+.Hébergements a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.Description {
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.Description h1 {
+    font-size: medium;
+}
+
+.Description p {
+    margin-top: 0px;
+}
+
+.Notes {
+    font-size: smaller;
+    margin-top: -7px;
+    margin-left: 30px;
+    color: #0065FC;
+}
+
+.grey {
+    color: #F2F2F2;
+}
+
+.Hébergements span {
+    font-weight: bold;
+}
+
+.Hébergements a:hover {
+    color: #0065FC;
+}
+
+/* fin card d'hébergements*/
+/* car plus populaire*/
+.Populaire {
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px lightgray;
+    width: 300px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.Populaire img {
+    width: 120px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.Populaire a {
+    text-decoration: none;
+    color: black;
+}
+
+.Populaire h2 {
+    font-size: medium;
+}
+
+.Populaire div {}
+
+.Description-populaire {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    /* En-tete pour mobile*/
+    #logo {
+        margin-left: 50%;
+        margin-right: 60%;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+        height: 80px;
+
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #H {
+        width: 50%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #A {
+        width: 50%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #A:hover {
+        border-top: hidden;
+        border-bottom: 2.5px solid #0065FC;
+
+    }
+
+    #H:hover {
+        border-top: hidden;
+        border-bottom: 2.5px solid #0065FC;
+    }
+
+    /* Fin de l'en-tete*/
+
+    h1 {
+        padding-top: 50px;
+        width: 80%;
+        height: 80px;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        margin-bottom: -14px;
+        margin: auto;
+    }
+
+    p {
+        width: 100%;
+        height: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    /* Barre de recherche mobile*/
+    #Recherche {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .fa-location-dot {
+        padding: 12px;
+    }
+
+    #bouton {
+        display: none;
+    }
+
+    #boutonMobile {
+        display: initial;
+    }
+
+    .fa-magnifying-glass {
+        display: block;
+        font-size: medium;
+        padding: 12px;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 10px;
+    }
+
+    #saisi {
+        height: 40px;
+    }
+
+    /* Fin barre de recherche mobile*/
+
+    h2 {
+        justify-content: center;
+        width: 600px;
+    }
+
+
+
+}

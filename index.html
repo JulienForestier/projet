@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/669baba106.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Booki</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo"><img src="/images/logo/Booki.png" alt="logo"> </div>
+        <nav>
+            <div id="H"><a href="#HM">Hébergements</a></div>
+            <div id="A"><a href="#AM">Activités</a></div>
+        </nav>
+    </header>
+
+    <h1>Trouvé votre hébergement pour des vacances de reve</h1>
+    <p>En plein centre ville ou en pleine nature</p>
+
+    <div id="Recherche">
+        <i class="fa-solid fa-location-dot"></i>
+        <form method="post" action="traitement.php"></form>
+        <label for="saisi"></label>
+        <input type="text" name="ville" value="Marseille, France" id="saisi" />
+        <input type="submit" value="Rechercher" id="bouton" />
+        <div><input id="boutonMobile" type="submit" value="" /> <i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+
+    <div id="BlocFiltres">
+        <h2>Filtres</h2>
+        <form method="post" action="traitement.php"></form>
+        <input type="checkbox" name="Economique" id="Economique" class="Filtres" />
+        <div class="Icones"><i class="fa-solid fa-money-bill-wave"></i><label for="Economique">Economique</label></div>
+        <input type="checkbox" name="Familial" id="Familial" class="Filtres" />
+        <div class="Icones"><i class="fa-solid fa-child-reaching"></i><label for="Familial">Familial</label></div>
+        <input type="checkbox" name="Romantique" id="Romantique" class="Filtres" />
+        <div class="Icones"><i class="fa-solid fa-heart"></i><label for="Romantique">Romantique</label></div>
+        <input type="checkbox" name="Animaux-autorises" id="Animaux-autorises" class="Filtres" />
+        <div class="Icones"><i class="fa-solid fa-dog"></i><label for="Animaux-autorises">Animaux autorisés</label>
+        </div>
+    </div>
+
+    <div id="texte">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+
+    <section>
+        <div class="Hébergements">
+            <a href="#">
+                <div>
+                    <img src="/images/hebergements/Hébergement-cannebière.jpg" alt="Aubérge la Cannebière">
+                    <div class="Description">
+                        <h4>Aubérge La Cannebière</h4>
+                        <p>Nuit à partir de <span>25€</span></p>
+                        <div class="Notes">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star grey"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="Populaire">
+            <a href="#">
+                <img src="/images/hebergements/hotel-le-soleil.jpg" alt="Hotel le soleil du matin">
+                <div class="Description-populaire">
+                    <h4>Hotel du soleil du matin</h4>
+                    <p>Nuit à partir de 128<span>€</span></p>
+                    <div class="Notes-populaire">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
