@@ -130,7 +130,6 @@ p {
 }
 
 #boutonMobile {
-    margin-left: -5px;
     display: none;
 }
 
@@ -186,6 +185,10 @@ label {
     background-color: #deebff;
 }
 
+input[type="checkbox"].Filtres:checked+.Icones {
+    background-color: #deebff;
+}
+
 /* Fin des filtres*/
 
 #texte {
@@ -199,13 +202,12 @@ label {
     padding-right: 10px;
 }
 
-#texte h3 {
+#texte p {
     font-weight: normal;
+    margin-left: -30px;
+
 }
 
-input[type="checkbox"].Filtres:checked+.Icones {
-    background-color: red;
-}
 
 /* Card d'hébergements*/
 
@@ -238,7 +240,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
     margin-top: -15px;
 }
 
-.Description h1 {
+.Description h4 {
     font-size: medium;
 }
 
@@ -379,17 +381,19 @@ input[type="checkbox"].Filtres:checked+.Icones {
         display: none;
     }
 
-    #boutonMobile {
-        display: initial;
+    #Mobile {
+        display: none;
     }
 
-    .fa-magnifying-glass {
+    #boutonMobile {
+        display: initial;
         display: block;
         font-size: medium;
-        padding: 12px;
+        padding: 11px;
         background-color: #0065FC;
         color: white;
         border-radius: 10px;
+        margin-left: -8px;
     }
 
     #saisi {
@@ -403,6 +407,11 @@ input[type="checkbox"].Filtres:checked+.Icones {
         width: 600px;
     }
 
-
+    #texte p {
+        text-align: left;
+        margin-left: 0px;
+        padding: 0px;
+        height: 100%;
+    }
 
 }
