@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    min-width: 400px;
+    min-width: 500px;
     max-width: 1800px;
     margin: auto;
     font-size: small;
@@ -208,12 +208,74 @@ input[type="checkbox"].Filtres:checked+.Icones {
 
 }
 
+/* Conteneur pour les hébergements*/
+#Conteneur-hébergements {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Le bloc hébergements*/
+#Bloc-hébergements {
+    width: 60%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+#Bloc-hébergements h3 {
+    width: 90%;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+
+.afficher-plus p {
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Le bloc populaire*/
+#Bloc-populaire {
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    min-width: 200px;
+}
+
+#Bloc-populaire h3 {
+    font-size: x-large;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#en-tete-populaire i {
+    font-size: x-large;
+    margin-right: 30px;
+}
+
+#en-tete-populaire {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
 
 /* Card d'hébergements*/
 
 .Hébergements {
-    width: 250px;
-    height: 190px;
+    width: 30%;
+    height: 200px;
     background-color: white;
     padding: 5px;
     border-radius: 15px;
@@ -236,23 +298,25 @@ input[type="checkbox"].Filtres:checked+.Icones {
 
 
 .Description {
-    margin-left: -15px;
-    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 .Description h4 {
-    font-size: medium;
+    font-size: large;
+    margin: 0 0 -15px 0;
 }
 
 .Description p {
-    margin-top: 0px;
+    font-size: medium;
+    padding-left: 0;
 }
 
 .Notes {
-    font-size: smaller;
-    margin-top: -7px;
-    margin-left: 30px;
     color: #0065FC;
+    margin-top: -10px;
+    font-size: smaller;
 }
 
 .grey {
@@ -268,19 +332,32 @@ input[type="checkbox"].Filtres:checked+.Icones {
 }
 
 /* fin card d'hébergements*/
-/* car plus populaire*/
+/* card plus populaire*/
 .Populaire {
     padding: 5px;
     border-radius: 15px;
     box-shadow: 6px 6px 5px lightgray;
-    width: 300px;
-    height: 120px;
+    width: 85%;
+    height: 25%;
     border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Populaire a {
+    display: flex;
+}
+
+.hébergements-populaires {
+    width: 40%;
+    height: 100%;
+    margin: 0;
 }
 
 .Populaire img {
-    width: 120px;
-    height: 110px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -290,13 +367,43 @@ input[type="checkbox"].Filtres:checked+.Icones {
     color: black;
 }
 
-.Populaire h2 {
-    font-size: medium;
+.Populaire h4 {
+    font-size: large;
+    margin-top: 10px;
 }
 
-.Populaire div {}
+.Description-populaire {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 5%;
+}
 
-.Description-populaire {}
+.Description-populaire p {
+    margin-top: -20px;
+    font-size: medium;
+    padding: 0;
+}
+
+.Populaire span {
+    font-weight: bold
+}
+
+.grey {
+    color: #F2F2F2;
+}
+
+.Notes-populaire {
+    color: #0065FC;
+}
+
+.Notes-populaire {
+    font-size: smaller;
+}
+
+.Populaire a:hover {
+    color: #0065FC;
+}
 
 @media screen and (max-width: 992px) {}
 
