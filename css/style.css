@@ -405,7 +405,22 @@ input[type="checkbox"].Filtres:checked+.Icones {
     color: #0065FC;
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    #Conteneur-hébergements {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #Bloc-populaire {
+        width: 90%;
+    }
+
+    #Bloc-hébergements {
+        width: 90%;
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -464,7 +479,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         margin: auto;
     }
 
-    p {
+    #P1 {
         width: 100%;
         height: 10px;
         padding-left: 10px;
@@ -521,4 +536,31 @@ input[type="checkbox"].Filtres:checked+.Icones {
         height: 100%;
     }
 
+    /* Conteneur hébergements*/
+    #Bloc-hébergements {
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+        height: auto;
+        align-items: center;
+        background-color: white;
+    }
+
+    .Hébergements {
+        width: 90%;
+        height: 30%;
+        margin-top: 3%;
+    }
+
+    #Bloc-hébergements h3 {
+        text-align: center;
+    }
+
+    #Bloc-hébergements p {
+        text-align: left;
+    }
+
+    #Bloc-populaire {
+        border-radius: 0px;
+    }
 }
