@@ -505,6 +505,10 @@ input[type="checkbox"].Filtres:checked+.Icones {
     height: 30px;
     margin-left: 35px;
 }
+#Notre-Dame h4{
+    margin-left: 4%;
+    margin-top: 4%;
+}
 
 @media screen and (max-width: 992px) {
     #Conteneur-hébergements {
@@ -521,6 +525,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         width: 90%;
         margin-top: 30px;
     }
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -703,5 +708,9 @@ input[type="checkbox"].Filtres:checked+.Icones {
     }
     #Parc-Longchamp{
         height: 150px;
+    }
+    #Notre-Dame h4{
+        margin-left: 20px;
+        margin-top: 15px;
     }
 }
