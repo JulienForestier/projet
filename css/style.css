@@ -376,7 +376,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
 .Description-populaire p {
     font-size: 12px;
     padding: 0;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 30px 0;
 }
 
 .Populaire span {
@@ -516,7 +516,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         width: 100%;
         height: 200px;
         background-color: #F2F2F2;
-        margin-top: 50px;
+        margin-top: 10px;
     }
     footer h5{
         font-size: 14px;
@@ -767,5 +767,8 @@ input[type="checkbox"].Filtres:checked+.Icones {
     }
     #activites h3{
         margin-left: 0;
+    }
+    footer{
+        width: 100%;
     }
 }
