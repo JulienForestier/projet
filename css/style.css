@@ -519,7 +519,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         margin-top: 50px;
     }
     footer h5{
-        font-size: large;
+        font-size: 14px;
         padding-left: 0px;
     }
     footer ul{
@@ -537,7 +537,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         padding-left: 20%;
     }
     footer{
-        font-size: medium;
+        font-size: 12px;
     }
 
 @media screen and (max-width: 992px) {
@@ -711,6 +711,9 @@ input[type="checkbox"].Filtres:checked+.Icones {
         width: 90%;
         margin-bottom: 20px  ;
     }
+    #bloc-activites{
+        height: auto;
+    }
     .grande-card{
         width: 90%;
         height: 150px;
@@ -721,7 +724,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
     }
     .deux-cards {
         width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     #Fort{
         margin-bottom: 20px;
@@ -740,7 +743,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
     }
     #Notre-Dame h4{
         margin-left: 20px;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     footer{
         flex-direction: column;
