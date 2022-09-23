@@ -368,6 +368,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
 
 .Description-populaire {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 60%;
     margin-left: 5%;
@@ -689,9 +690,9 @@ input[type="checkbox"].Filtres:checked+.Icones {
     }
 
     #Bloc-hebergements h3 {
-        text-align: center;
+        text-align: left;
         margin-top: 20px;
-        margin-left: 0;
+        margin-left: 25px;
     
     }
 
@@ -714,7 +715,7 @@ input[type="checkbox"].Filtres:checked+.Icones {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         width: 90%;
         margin-bottom: 20px  ;
@@ -766,7 +767,8 @@ input[type="checkbox"].Filtres:checked+.Icones {
         padding-left: 5%;
     }
     #activites h3{
-        margin-left: 0;
+        text-align: left;
+        margin-left: 25px;
     }
     footer{
         width: 100%;
