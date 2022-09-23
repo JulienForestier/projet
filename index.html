@@ -15,8 +15,9 @@
     />
     <title>Booki</title>
   </head>
-
+  
   <body>
+    <!-- le header en display flex avec deux blocs un pour le logo et un autre pour na nav avec les liens hébergement et activités-->
     <header>
       <div id="logo"><img src="./images/logo/Booki.png" alt="logo" /></div>
       <nav>
@@ -27,7 +28,7 @@
 
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p id="P1">En plein centre ville ou en pleine nature</p>
-
+    <!-- un bloc de recherche dans un formulaire avec une icone de localisation un champs de texte et j'ai choisis de faire un bouton de type input pour pouvoir mettre l'icone en tant que bouton-->
     <div id="barre-Recherche">
       <i class="fa-solid fa-location-dot"></i>
       <form method="post" action="traitement.php" id="formulaire">
@@ -39,7 +40,7 @@
         </button>
       </form>
     </div>
-
+    <!--Mon bloc filtres avec mes filtres de type checkbox afin de pouvoir par la suite les rendres utilisables lorsque j'aurais les connaisance en back-->
     <div id="BlocFiltres">
       <h2>Filtres</h2>
       <form method="post" action="traitement.php"></form>
@@ -84,7 +85,7 @@
       <i class="fa-solid fa-circle-info"></i>
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-
+    <!--Ma section sur les hébergements j'ai utilisé des conteneurs et la propriété flex dés que je pouvais pour optimisé tout ca et que tout se mette bien a sa place-->
     <section id="Conteneur-hebergements">
       <div id="Bloc-hebergements">
         <h3>Hébergement à Marseille</h3>
@@ -288,6 +289,7 @@
         </a>
       </div>
     </section>
+    <!--Ma section sur les activités j'ai la aussi utilisé la propriété flex sur mon contener et j'ai stylisé le tout pour que ça colle a la maquette-->
     <section id="activites">
       <h3>Activités à Marseille</h3>
       <div id="bloc-activites">
@@ -352,7 +354,7 @@
         </div>
       </div>
     </section>
-
+    <!--Pour le footer j'ai une fois de plus utilisé la propriété flex et aussi les listes a puces  -->
     <footer>
       <div id="liste1">
         <h5>A propos</h5>
